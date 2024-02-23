@@ -1,18 +1,20 @@
 /* eslint-disable no-unused-vars */
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { COUNTER_CONTEXT } from "../context/CounterContext";
 
-const Counter = ({ count, setCount }) => {
+const Counter = () => {
+  const value = useContext(COUNTER_CONTEXT);
   return (
     <div className="flex shrink-0 px-10 m-10 gap-5 rounded-xl max-w-md justify-center items-center bg-gray-200 p-10">
       <button
-        onClick={() => setCount((prev) => prev - 1)}
+        onClick={() => value?.setCount((prev) => prev - 1)}
         className="bg-red-300 py-2 px-5 rounded-md"
       >
         Decrement
       </button>
-      <h1>{count}</h1>
+      <h1>{value?.count}</h1>
       <button
-        onClick={() => setCount((prev) => prev + 1)}
+        onClick={() => value?.setCount((prev) => prev + 1)}
         className="bg-emerald-300 py-2 px-5 rounded-md"
       >
         Increment
