@@ -1,9 +1,11 @@
 import CaseOne from "./Pages/CaseOne/CaseOne";
+import CaseTwo from "./Pages/CaseTwo/CaseTwo";
 
 const App = () => {
   return (
     <>
-      <CaseOne />
+      {/* <CaseOne /> */}
+      <CaseTwo />
     </>
   );
 };

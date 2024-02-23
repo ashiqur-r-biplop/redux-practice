@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 const ChildOne = ({ count, setCount }) => {
   return (
     <div className="border-2 border-purple-600 m-10 max-w-4xl mx-auto rounded-md">
