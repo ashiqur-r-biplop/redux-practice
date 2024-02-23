@@ -1,8 +1,7 @@
 /* eslint-disable no-unused-vars */
 import { useState } from "react";
 
-const Counter = () => {
-  const [count, setCount] = useState(0);
+const Counter = ({ count, setCount }) => {
   return (
     <div className="flex shrink-0 px-10 m-10 gap-5 rounded-xl max-w-md justify-center items-center bg-gray-200 p-10">
       <button
